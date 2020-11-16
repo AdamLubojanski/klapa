@@ -28,7 +28,7 @@ void zamiana::licz(){
 
     while(!plik1.eof()){ 
         plik1 >> system >> liczba; 
- 			strol(liczba);
+ 			strol(liczba.c_str(), &endptr, system);
 		 }
 	 }
             
