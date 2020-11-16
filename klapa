@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <iostream>
+#include <bitset>
+#include <string>
+#include <fstream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+class zamiana{
+       ifstream plik1;
+       ofstream plik2;
+
+  public:
+        zamiana();
+        ~zamiana();
+       
+        void licz();        
+};
+
+zamiana::zamiana(){ 
+    plik1.open("c:\\od.txt");
+    plik2.open("c:\\do.txt");
+}
+
+void zamiana::licz(){
+    int system;
+    int liczba;
+
+    while(!plik1.eof()){ 
+        plik1 >> system >> liczba; 
+ 			strol(liczba);
+		 }
+	 }
+            
+    }
+}
+
+zamiana::~zamiana(){ 
+    plik1.close();
+    plik2.close();
+}
+
+int main() {
+    zamiana z1;
+    z1.licz(); 
+    return 0;
+}
